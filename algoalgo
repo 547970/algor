@@ -1,0 +1,25 @@
+ALGORITHM check point algo
+VAR 
+str: STRING;
+i:INTEGER:=0;
+w:INTEGER:=1;
+v:INTEGER:=0;
+c:INTEGER:=0;
+BEGIN
+  Read (str)  
+  WHILE (str[i]<>".") DO
+IF (str[i]=" ") THEN
+    w=w+1;
+END_IF
+IF (str[i]="a"||"u") THEN
+    v=v+1
+END_IF
+    c=c+1
+    i=i+1;
+  END_WHILE
+
+Write("nobre voielle:",w,c,v)
+
+
+
+END
